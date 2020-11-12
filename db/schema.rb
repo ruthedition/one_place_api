@@ -18,8 +18,8 @@ ActiveRecord::Schema.define(version: 2020_11_12_185543) do
   create_table "members", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
-    t.string "birthday"
-    t.datetime "diet"
+    t.datetime "birthday"
+    t.string "diet"
     t.integer "shoe_size"
     t.text "gifts"
     t.text "items"
