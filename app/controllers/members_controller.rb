@@ -6,6 +6,7 @@ class  MembersController < ApplicationController
   end 
 
   def create
+    byebug
     render json: Member.create(member_params)
   end 
 
@@ -20,7 +21,7 @@ def member_params
     :last_name, 
     :birthday, 
     :diet,
-    :shoeSize,
+    :shoe_size,
     :gifts,
     :items,
     :color,
