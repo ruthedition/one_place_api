@@ -5,6 +5,10 @@ class  MembersController < ApplicationController
     render json: members
   end 
 
+  def create
+    render json: Member.create(member_params)
+  end 
+
 
 end
 
