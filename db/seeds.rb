@@ -8,6 +8,7 @@
 
 require 'faker'
 user = User.create({ first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, email: 'email@mail.com', password: '123' })
+user1 = User.create({ first_name: 'Ruth', last_name: 'Kebede', email: 'ruth@mail.com', password: '123' })
 
 Member.create({ first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, birthday: Faker::Date.birthday(min_age: 18, max_age: 65), diet: 'no preference', shoe_size: Faker::Number.between(from: 1, to: 15), gifts: 'something nice', items: 'shoes, clothes', color: Faker::Color.color_name, notes: Faker::Relationship.familial, user: user })
 Member.create({ first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, birthday: Faker::Date.birthday(min_age: 18, max_age: 65), diet: 'no preference', shoe_size: Faker::Number.between(from: 1, to: 15), gifts: 'something nice', items: 'shoes, clothes', color: Faker::Color.color_name, notes: Faker::Relationship.familial, user: user })
@@ -16,3 +17,8 @@ Member.create({ first_name: Faker::Name.first_name, last_name: Faker::Name.last_
 Member.create({ first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, birthday: Faker::Date.birthday(min_age: 18, max_age: 65), diet: 'no preference', shoe_size: Faker::Number.between(from: 1, to: 15), gifts: 'something nice', items: 'shoes, clothes', color: Faker::Color.color_name, notes: Faker::Relationship.familial, user: user })
 Member.create({ first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, birthday: Faker::Date.birthday(min_age: 18, max_age: 65), diet: 'no preference', shoe_size: Faker::Number.between(from: 1, to: 15), gifts: 'something nice', items: 'shoes, clothes', color: Faker::Color.color_name, notes: Faker::Relationship.familial, user: user })
 
+
+
+Member.create({ first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, birthday: Faker::Date.birthday(min_age: 18, max_age: 65), diet: 'no preference', shoe_size: Faker::Number.between(from: 1, to: 15), gifts: 'something nice', items: 'shoes, clothes', color: Faker::Color.color_name, notes: Faker::Relationship.familial, user: user1 })
+Member.create({ first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, birthday: Faker::Date.birthday(min_age: 18, max_age: 65), diet: 'no preference', shoe_size: Faker::Number.between(from: 1, to: 15), gifts: 'something nice', items: 'shoes, clothes', color: Faker::Color.color_name, notes: Faker::Relationship.familial, user: user1 })
+Member.create({ first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, birthday: Faker::Date.birthday(min_age: 18, max_age: 65), diet: 'no preference', shoe_size: Faker::Number.between(from: 1, to: 15), gifts: 'something nice', items: 'shoes, clothes', color: Faker::Color.color_name, notes: Faker::Relationship.familial, user: user1 })
