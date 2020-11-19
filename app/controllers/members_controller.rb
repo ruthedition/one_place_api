@@ -1,7 +1,8 @@
 class  MembersController < ApplicationController
 
   def index 
-    members = Member.all
+
+    members = Member.where(user_id: params[:user_id])
     render json: members
   end 
 
