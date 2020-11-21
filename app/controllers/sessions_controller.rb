@@ -9,7 +9,9 @@ class  SessionsController < ApplicationController
     end 
   end 
 
-
+  def logout
+    reset_session
+  end 
 end 
 
 private 
