@@ -5,7 +5,7 @@ class  SessionsController < ApplicationController
     if user && user.authenticate(params[:password])
       render json: user
     else 
-      render json:  {error: "Please check your email or password."}
+      render json: {error: "Please check your email or password."}
     end 
   end 
 

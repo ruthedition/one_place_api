@@ -11,7 +11,10 @@ class  MembersController < ApplicationController
     render json: member if member.save!  
   end 
 
-
+  def destroy
+    member = Member.find(params[:id])
+    member.destroy
+  end 
 end
 
 private 
