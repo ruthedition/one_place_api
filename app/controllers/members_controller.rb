@@ -10,6 +10,12 @@ class  MembersController < ApplicationController
     member = Member.create(member_params)
     render json: member if member.save!  
   end 
+  
+  def update 
+    member = Member.find(params[:id])
+    member.update(member_params)
+    render json: member 
+  end 
 
   def destroy
     member = Member.find(params[:id])
