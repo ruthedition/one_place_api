@@ -5,6 +5,10 @@ class  UsersController < ApplicationController
     render json: user
   end 
   
+  def create
+    user = User.create(user_params)
+    render json: user if user.save!  
+  end 
 
 end
 
