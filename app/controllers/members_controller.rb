@@ -1,10 +1,10 @@
 class  MembersController < ApplicationController
 
-  def index 
+def index 
 
-    members = Member.where(user_id: params[:user_id])
-    render json: members
-  end 
+  members = Member.where(user_id: params[:user_id])
+  render json: members
+end 
 
   def create
     member = Member.create(member_params)
